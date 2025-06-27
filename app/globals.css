@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 9%;
+    --foreground: 220 9% 89%;
+    --card: 220 13% 12%;
+    --card-foreground: 220 9% 89%;
+    --popover: 220 13% 12%;
+    --popover-foreground: 220 9% 89%;
+    --primary: 263 70% 60%;
+    --primary-foreground: 220 9% 89%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 9% 70%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 13% 18%;
+    --accent-foreground: 220 9% 89%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 9% 89%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 263 70% 60%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-cyan-400 bg-clip-text text-transparent;
+  }
+  
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-purple-500 before:via-pink-500 before:to-cyan-500 before:rounded-lg;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    z-index: -1;
+  }
+  
+  .gradient-border > * {
+    @apply bg-background rounded-lg relative z-10;
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .glow-effect {
+    @apply shadow-[0_0_50px_-12px] shadow-purple-500/25;
+  }
+}
