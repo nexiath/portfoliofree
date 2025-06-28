@@ -6,60 +6,60 @@ import { Badge } from '@/components/ui/badge';
 import { useState } from 'react';
 
 export function TechStackSection() {
-  const [activeCategory, setActiveCategory] = useState('frontend');
+  const [activeCategory, setActiveCategory] = useState<'frontend' | 'backend' | 'web3' | 'ai' | 'devops'>('frontend');
 
   const techStack = {
     frontend: {
       title: 'Frontend',
       technologies: [
-        { name: 'React', level: 95 },
-        { name: 'Next.js', level: 90 },
+        { name: 'React', level: 90 },
+        { name: 'Next.js App Router', level: 92 },
         { name: 'TailwindCSS', level: 95 },
-        { name: 'Shadcn/ui', level: 85 },
-        { name: 'TypeScript', level: 90 },
+        { name: 'Shadcn/UI', level: 88 },
+        { name: 'TypeScript', level: 85 },
         { name: 'Framer Motion', level: 80 },
       ],
     },
     backend: {
       title: 'Backend',
       technologies: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Express', level: 85 },
-        { name: 'Supabase', level: 80 },
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'Python', level: 75 },
+        { name: 'Node.js', level: 85 },
+        { name: 'Supabase', level: 90 },
+        { name: 'PostgreSQL', level: 82 },
+        { name: 'MongoDB', level: 78 },
+        { name: 'Express', level: 80 },
+        { name: 'Python', level: 85 },
       ],
     },
     web3: {
       title: 'Web3',
       technologies: [
-        { name: 'Ethers.js', level: 85 },
-        { name: 'Solidity', level: 80 },
-        { name: 'Hardhat', level: 75 },
-        { name: 'IPFS', level: 70 },
-        { name: 'The Graph', level: 70 },
+        { name: 'Solidity', level: 85 },
+        { name: 'Ethers.js', level: 88 },
+        { name: 'Hardhat', level: 82 },
+        { name: 'IPFS', level: 75 },
+        { name: 'MEV Protection', level: 80 },
         { name: 'Wallet Connect', level: 85 },
       ],
     },
     ai: {
       title: 'AI/ML',
       technologies: [
-        { name: 'OpenAI API', level: 90 },
+        { name: 'Python', level: 85 },
+        { name: 'PyTorch', level: 78 },
         { name: 'LangChain', level: 85 },
-        { name: 'Claude API', level: 80 },
-        { name: 'Vector Databases', level: 75 },
-        { name: 'Python ML', level: 70 },
-        { name: 'Custom LLM Tools', level: 80 },
+        { name: 'Claude API', level: 92 },
+        { name: 'OpenAI API', level: 88 },
+        { name: 'Vector Databases', level: 80 },
       ],
     },
     devops: {
       title: 'DevOps',
       technologies: [
-        { name: 'Vercel', level: 90 },
-        { name: 'Docker', level: 80 },
         { name: 'GitHub Actions', level: 85 },
-        { name: 'Railway', level: 75 },
+        { name: 'Vercel/Railway', level: 90 },
+        { name: 'Docker', level: 75 },
+        { name: 'PowerShell', level: 88 },
         { name: 'WSL', level: 85 },
         { name: 'Git/GitHub', level: 95 },
       ],

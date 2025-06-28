@@ -44,88 +44,95 @@ export default function Portfolio() {
   const techStack = {
     frontend: [
       { name: 'React', level: 90 },
-      { name: 'Next.js', level: 88 },
-      { name: 'TailwindCSS', level: 92 },
-      { name: 'Shadcn/UI', level: 85 },
-      { name: 'TypeScript', level: 80 },
+      { name: 'Next.js App Router', level: 92 },
+      { name: 'TailwindCSS', level: 95 },
+      { name: 'Shadcn/UI', level: 88 },
+      { name: 'TypeScript', level: 85 },
     ],
     backend: [
       { name: 'Node.js', level: 85 },
-      { name: 'Supabase', level: 88 },
+      { name: 'Supabase', level: 90 },
       { name: 'PostgreSQL', level: 82 },
       { name: 'MongoDB', level: 78 },
       { name: 'Express', level: 80 },
     ],
     web3: [
-      { name: 'Solidity', level: 82 },
-      { name: 'Ethers.js', level: 85 },
-      { name: 'Hardhat', level: 80 },
+      { name: 'Solidity', level: 85 },
+      { name: 'Ethers.js', level: 88 },
+      { name: 'Hardhat', level: 82 },
       { name: 'IPFS', level: 75 },
-      { name: 'Web3 Integration', level: 88 },
+      { name: 'MEV Protection', level: 80 },
     ],
     ai: [
       { name: 'Python', level: 85 },
-      { name: 'PyTorch', level: 80 },
-      { name: 'LangChain', level: 82 },
+      { name: 'PyTorch', level: 78 },
+      { name: 'LangChain', level: 85 },
+      { name: 'Claude API', level: 92 },
       { name: 'OpenAI API', level: 88 },
-      { name: 'Claude API', level: 90 },
+    ],
+    devops: [
+      { name: 'GitHub Actions', level: 85 },
+      { name: 'Vercel/Railway', level: 90 },
+      { name: 'Docker', level: 75 },
+      { name: 'PowerShell', level: 88 },
+      { name: 'WSL', level: 85 },
     ]
   };
 
   const projects = [
     {
-      title: 'LearnLoop',
-      description: 'AI-powered SaaS platform for intelligent revision with white-label solutions for educational institutions.',
-      tech: ['Next.js', 'Supabase', 'PostgreSQL', 'TailwindCSS', 'Claude API'],
-      image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/learnloop',
-      demo: 'https://learnloop.education',
-      highlights: ['OCR integration', 'Multi-role dashboard', 'White-label ready']
-    },
-    {
       title: 'DEX Price Comparator',
-      description: 'Web3 frontend application comparing token prices across different decentralized exchanges.',
-      tech: ['React', 'Ethers.js', 'Web3', 'TailwindCSS'],
-      image: 'https://images.pexels.com/photos/8369648/pexels-photo-8369648.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/dex-comparator',
-      demo: 'https://dex-compare.vercel.app',
-      highlights: ['Wallet connection', 'Real-time prices', 'No backend needed']
+      description: 'Web3 application for comparing cryptocurrency prices across different decentralized exchanges with real-time data.',
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Web3'],
+      image: 'https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/DEXPriceComparator',
+      demo: 'https://dex-price-comparator.vercel.app',
+      highlights: ['Real-time DEX prices', 'Responsive design', 'TypeScript implementation']
     },
     {
-      title: 'CausaliScribe',
-      description: 'AI-powered causal narrative generator using LLM and causal inference for statistical analysis.',
-      tech: ['Python', 'LangChain', 'Claude API', 'Streamlit'],
-      image: 'https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/causaliscribe',
-      demo: 'https://causaliscribe.streamlit.app',
-      highlights: ['MS DSBA project', 'Causal inference', 'Statistical insights']
+      title: 'CryptoNotes',
+      description: 'Modern note-taking application focused on cryptocurrency research and portfolio tracking with clean UI.',
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS'],
+      image: 'https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/CryptoNotes',
+      demo: 'https://crypto-notes-one.vercel.app',
+      highlights: ['Clean UI design', 'Crypto-focused features', 'Fast performance']
     },
     {
-      title: 'EthiCraft',
-      description: 'AI ethics impact simulator with bias detection metrics and synthetic data generation.',
-      tech: ['Python', 'PyTorch', 'FastAPI', 'React', 'ML Libraries'],
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/ethicraft',
-      demo: 'https://ethicraft.app',
-      highlights: ['Fairness metrics', 'Bias simulation', 'Audit dashboard']
+      title: 'Hibitude',
+      description: 'iOS habit tracking application built with Swift. Helps users build positive daily habits with motivational features.',
+      tech: ['Swift', 'iOS', 'CoreData'],
+      image: 'https://images.pexels.com/photos/4386373/pexels-photo-4386373.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/Hibitude',
+      demo: null,
+      highlights: ['Native iOS app', 'CoreData integration', 'University project']
     },
     {
-      title: 'FlashBundler',
-      description: 'DeFi infrastructure for transaction fee optimization with MEV protection and ZK claims.',
-      tech: ['Solidity', 'Hardhat', 'Ethers.js', 'IPFS'],
-      image: 'https://images.pexels.com/photos/8369769/pexels-photo-8369769.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/flashbundler',
-      demo: 'https://flashbundler.defi',
-      highlights: ['Gas optimization', 'MEV protection', 'Scalability focus']
+      title: 'Balonu',
+      description: 'Vue.js web application with modern design patterns and responsive interface for enhanced user experience.',
+      tech: ['Vue.js', 'JavaScript', 'HTML/CSS'],
+      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/balonu_',
+      demo: 'https://balonu.vercel.app',
+      highlights: ['Vue.js framework', 'Modern UI/UX', 'Responsive design']
     },
     {
-      title: 'Niche Market Scout',
-      description: 'Business intelligence platform using LLM, web scraping and dashboard for emerging market detection.',
-      tech: ['Next.js', 'OpenAI', 'LangChain', 'Web Scraping', 'NLP'],
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: 'https://github.com/robincassard/market-scout',
-      demo: 'https://market-scout.app',
-      highlights: ['Weak signal detection', 'NLP analysis', 'Market trends']
+      title: 'Budget Manager',
+      description: 'Personal finance management tool with expense tracking and budget planning features for better financial control.',
+      tech: ['Makefile', 'System Programming'],
+      image: 'https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/BudgetManager',
+      demo: null,
+      highlights: ['Financial management', 'System-level programming', 'Practical utility']
+    },
+    {
+      title: 'Rock Paper Scissors',
+      description: 'Interactive game implementation with modern web technologies and smooth user interactions.',
+      tech: ['TypeScript', 'Web Technologies'],
+      image: 'https://images.pexels.com/photos/3662770/pexels-photo-3662770.jpeg?auto=compress&cs=tinysrgb&w=800',
+      github: 'https://github.com/nexiath/rockpaperscissor',
+      demo: null,
+      highlights: ['Interactive gameplay', 'TypeScript implementation', 'Clean code structure']
     }
   ];
 
@@ -133,50 +140,50 @@ export default function Portfolio() {
     {
       icon: <Globe className="w-8 h-8" />,
       title: 'Web3 dApp Development',
-      description: 'Full-stack decentralized applications with wallet integration, smart contracts, and modern UI.',
-      price: 'From $8K',
-      features: ['Smart Contract Development', 'Wallet Integration', 'DeFi Protocol Building', 'NFT Marketplaces']
+      description: 'Complete decentralized applications with wallet integration, smart contracts optimization, and intuitive user interfaces.',
+      price: 'From €5K',
+      features: ['Smart Contract Architecture', 'Wallet Integration (MetaMask, WalletConnect)', 'DeFi Protocol Development', 'Gas Optimization & MEV Protection']
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: 'AI Integration & Automation',
-      description: 'Custom AI solutions, chatbots, and intelligent automation systems for your business.',
-      price: 'From $5K',
-      features: ['Custom LLM Integration', 'RAG Systems', 'AI Chatbots', 'Process Automation']
+      title: 'AI-Powered SaaS Solutions',
+      description: 'Custom AI integrations, educational platforms, and intelligent automation systems using Claude, OpenAI, and LangChain.',
+      price: 'From €3K',
+      features: ['LLM Integration (Claude, OpenAI)', 'RAG Systems & Vector DBs', 'OCR & Document Processing', 'Multi-Role Dashboards']
     },
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: 'Fullstack Web Applications',
-      description: 'Modern, scalable web applications with responsive design and robust backend architecture.',
-      price: 'From $6K',
-      features: ['React/Next.js Frontend', 'API Development', 'Database Design', 'Cloud Deployment']
+      title: 'Full-Stack Web Applications',
+      description: 'Modern, scalable applications using Next.js, Supabase, and production-ready architecture with perfect UI/UX.',
+      price: 'From €4K',
+      features: ['Next.js App Router', 'Supabase Backend', 'Shadcn/UI Components', 'Vercel/Railway Deployment']
     },
     {
-      icon: <Database className="w-8 h-8" />,
-      title: 'Data Solutions & Analytics',
-      description: 'Web scraping, data processing, vector databases, and custom analytics dashboards.',
-      price: 'From $4K',
-      features: ['Web Scraping', 'ETL Pipelines', 'Analytics Dashboards', 'Vector Databases']
+      icon: <Zap className="w-8 h-8" />,
+      title: 'Ultra-Fast Landing Pages',
+      description: 'Professional landing pages delivered in 48-72h. Perfect conversion optimization, responsive design, and lightning-fast loading.',
+      price: '€700',
+      features: ['48-72h Delivery', 'Conversion Optimized', 'Mobile-First Design', 'SEO Ready & Analytics']
     }
   ];
 
   const testimonials = [
     {
       name: 'Marie Dubois',
-      role: 'Startup Founder',
-      content: 'Robin delivered a high-quality Web3 solution for our token platform. His technical expertise and reliability were impressive.',
+      role: 'DeFi Startup Founder',
+      content: 'Robin delivered an exceptional Web3 solution with gas optimization and MEV protection. His understanding of both technical and business requirements is remarkable for someone his age.',
       avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100'
     },
     {
-      name: 'Thomas Martin',
-      role: 'EdTech Company CEO',
-      content: 'Working with Robin on our AI-powered learning platform was excellent. He delivered beyond expectations with great communication.',
+      name: 'Thomas Martin', 
+      role: 'EdTech Platform CEO',
+      content: 'Working with Robin on our AI-powered learning platform exceeded all expectations. Professional communication, fast delivery, and innovative solutions. Highly recommended!',
       avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100'
     },
     {
       name: 'Sophie Laurent',
-      role: 'Product Manager',
-      content: 'Robin\'s full-stack development skills and AI integration expertise helped us build a competitive advantage in our market.',
+      role: 'Digital Transformation Manager',
+      content: 'Robin\'s expertise in both AI integration and full-stack development helped us automate complex business processes. His work directly contributed to our competitive advantage.',
       avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100'
     }
   ];
@@ -239,8 +246,8 @@ export default function Portfolio() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                Computer Science Engineering Student{' '}
-                <span className="text-gradient">& Web3/AI Developer</span>
+                Computer Science Engineer{' '}
+                <span className="text-gradient">& Full-Stack AI/Web3 Developer</span>
               </motion.h1>
               <motion.p 
                 className="text-xl text-muted-foreground mb-8 max-w-lg"
@@ -248,7 +255,7 @@ export default function Portfolio() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                24-year-old computer science engineering student at UTBM, specializing in AI. Building innovative Web3 and AI solutions while working as EDI technician at FORVIA. Available for freelance projects evenings & weekends, France timezone.
+                24-year-old Computer Science Engineering student specializing in AI. I build innovative Web3 dApps, AI-powered SaaS platforms, and full-stack solutions with a focus on emerging technologies.
               </motion.p>
               <motion.div 
                 className="flex flex-wrap gap-4 mb-8"
@@ -281,12 +288,12 @@ export default function Portfolio() {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://linkedin.com/in/robincassard" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/robin-cassard" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:robin.cassard@dev.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:robin.cassard.dev@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="w-5 h-5" />
                   </a>
                 </Button>
@@ -318,10 +325,10 @@ export default function Portfolio() {
                       <Code2 className="w-16 h-16 text-white" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Available for Freelance</h3>
-                    <p className="text-muted-foreground mb-4">Evenings & weekends - France timezone</p>
+                    <p className="text-muted-foreground mb-4">Evenings & weekends - France timezone - Fast replies</p>
                     <div className="flex justify-center space-x-2">
-                      <Badge variant="secondary">Available</Badge>
-                      <Badge variant="outline">France UTC+2</Badge>
+                      <Badge variant="secondary">Available Now</Badge>
+                      <Badge variant="outline">Crypto Accepted</Badge>
                     </div>
                   </div>
                 </div>
@@ -350,21 +357,22 @@ export default function Portfolio() {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              From Student to <span className="text-gradient">Web3 Pioneer</span>
+              About <span className="text-gradient">Robin CASSARD</span>
             </h2>
             
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Currently pursuing a computer science engineering degree at UTBM with a specialization in AI, while working as an EDI technician at FORVIA. My passion for emerging technologies led me to master Web3 development and AI integration.
+                  Computer Science Engineering student specializing in AI and machine learning. Currently gaining professional experience in digital transformation and automation systems while developing innovative tech solutions.
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  I combine academic knowledge with hands-on experience to build innovative solutions spanning blockchain, artificial intelligence, and modern web applications. Available for freelance projects during evenings and weekends.
+                  I combine academic knowledge with hands-on professional experience to build production-ready solutions in Web3, AI, and full-stack development. Passionate about emerging technologies and creating impactful digital experiences.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge>UTBM Engineering Student</Badge>
-                  <Badge>AI Specialization</Badge>
-                  <Badge>FORVIA Alternance</Badge>
+                  <Badge>Engineering Student</Badge>
+                  <Badge>AI Specialist</Badge>
+                  <Badge>Web3 Developer</Badge>
+                  <Badge>Full-Stack Expert</Badge>
                 </div>
               </div>
               
@@ -392,8 +400,8 @@ export default function Portfolio() {
                     <Globe className="w-6 h-6 text-pink-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">France Based</h4>
-                    <p className="text-sm text-muted-foreground">UTC+2 timezone, crypto & fiat payments</p>
+                    <h4 className="font-semibold">French Timezone</h4>
+                    <p className="text-sm text-muted-foreground">Jura/Doubs region, crypto & fiat accepted</p>
                   </div>
                 </div>
               </div>
@@ -401,11 +409,12 @@ export default function Portfolio() {
 
             {/* Tech Stack */}
             <Tabs defaultValue="frontend" className="w-full">
-              <TabsList className="grid w-full grid-cols-4">
+              <TabsList className="grid w-full grid-cols-5">
                 <TabsTrigger value="frontend">Frontend</TabsTrigger>
                 <TabsTrigger value="backend">Backend</TabsTrigger>
                 <TabsTrigger value="web3">Web3</TabsTrigger>
                 <TabsTrigger value="ai">AI/ML</TabsTrigger>
+                <TabsTrigger value="devops">DevOps</TabsTrigger>
               </TabsList>
               {Object.entries(techStack).map(([category, skills]) => (
                 <TabsContent key={category} value={category} className="mt-8">
@@ -485,11 +494,13 @@ export default function Portfolio() {
                           <Github className="w-4 h-4" />
                         </a>
                       </Button>
-                      <Button size="icon" variant="secondary" asChild>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
+                      {project.demo && (
+                        <Button size="icon" variant="secondary" asChild>
+                          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                   <CardHeader>
@@ -635,7 +646,7 @@ export default function Portfolio() {
                 Let's Build <span className="text-gradient">Something Amazing</span>
               </h2>
               <p className="text-xl text-muted-foreground">
-                Ready to bring your Web3 or AI project to life? Let's discuss your vision.
+                Ready to build the next generation of Web3 dApps or AI-powered solutions? Let's discuss your project and bring your vision to life.
               </p>
             </div>
 
@@ -693,44 +704,52 @@ export default function Portfolio() {
                   <h3 className="text-xl font-semibold mb-6">Quick Connect</h3>
                   <div className="space-y-4">
                     <Button className="w-full justify-start" variant="outline" size="lg" asChild>
-                      <a href="https://calendly.com/robincassard/30min" target="_blank" rel="noopener noreferrer">
+                      <a href="https://calendly.com/robin-cassard/freelance-consultation" target="_blank" rel="noopener noreferrer">
                         <Calendar className="w-5 h-5 mr-3" />
-                        Schedule a Call
+                        Schedule Free Consultation
                       </a>
                     </Button>
                     <Button className="w-full justify-start" variant="outline" size="lg" asChild>
-                      <a href="mailto:robin.cassard@dev.fr">
+                      <a href="mailto:robin.cassard.dev@gmail.com">
                         <Mail className="w-5 h-5 mr-3" />
-                        robin.cassard@dev.fr
+                        robin.cassard.dev@gmail.com
                       </a>
                     </Button>
                     <Button className="w-full justify-start" variant="outline" size="lg" asChild>
-                      <a href="https://t.me/robincassard_dev" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/robincassard" target="_blank" rel="noopener noreferrer">
                         <MessageCircle className="w-5 h-5 mr-3" />
-                        Telegram
+                        Telegram (Fast Response)
                       </a>
                     </Button>
                   </div>
                 </Card>
 
                 <Card className="p-8">
-                  <h3 className="text-xl font-semibold mb-4">Availability</h3>
+                  <h3 className="text-xl font-semibold mb-4">Freelance Availability</h3>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
+                      <span>Location</span>
+                      <Badge>Jura/Doubs, France</Badge>
+                    </div>
+                    <div className="flex items-center justify-between">
                       <span>Timezone</span>
-                      <Badge>France (UTC+2)</Badge>
+                      <Badge>UTC+2 (CET/CEST)</Badge>
                     </div>
                     <div className="flex items-center justify-between">
                       <span>Response Time</span>
-                      <Badge variant="secondary">Fast replies</Badge>
+                      <Badge variant="secondary">24-48h guaranteed</Badge>
                     </div>
                     <div className="flex items-center justify-between">
                       <span>Availability</span>
-                      <Badge className="bg-green-500">Evenings & weekends</Badge>
+                      <Badge className="bg-green-500">Evenings & Weekends</Badge>
                     </div>
                     <div className="flex items-center justify-between">
                       <span>Payment</span>
-                      <Badge variant="outline">Crypto accepted</Badge>
+                      <Badge variant="outline">Crypto & Fiat</Badge>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span>Work Style</span>
+                      <Badge variant="outline">100% Remote</Badge>
                     </div>
                   </div>
                 </Card>
@@ -744,12 +763,12 @@ export default function Portfolio() {
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <a href="https://linkedin.com/in/robincassard" target="_blank" rel="noopener noreferrer">
+                      <a href="https://linkedin.com/in/robin-cassard" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="w-5 h-5" />
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <a href="mailto:robin.cassard@dev.fr" target="_blank" rel="noopener noreferrer">
+                      <a href="mailto:robin.cassard.dev@gmail.com" target="_blank" rel="noopener noreferrer">
                         <Mail className="w-5 h-5" />
                       </a>
                     </Button>
@@ -772,7 +791,7 @@ export default function Portfolio() {
               Robin CASSARD
             </motion.div>
             <p className="text-muted-foreground mb-6">
-              Computer Science Engineering Student • EDI Technician at FORVIA • Web3/AI Developer
+              Computer Science Engineering Student • Tech Professional • Freelance Web3/AI Developer • Available Evenings & Weekends
             </p>
             <div className="flex justify-center space-x-6 mb-8">
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>

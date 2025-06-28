@@ -40,7 +40,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-xl font-bold">
-            Alex Chen
+            Robin CASSARD
           </Link>
 
           {/* Desktop Menu */}
@@ -57,7 +57,7 @@ export function Navbar() {
             <div className="flex items-center space-x-2">
               <Button variant="ghost" size="sm" asChild>
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/nexiath"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -66,20 +66,11 @@ export function Navbar() {
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <Link
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/robin-cassard"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Linkedin className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button variant="ghost" size="sm" asChild>
-                <Link
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twitter className="h-4 w-4" />
                 </Link>
               </Button>
             </div>

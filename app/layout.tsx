@@ -5,24 +5,24 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Alex Chen - Web3 Fullstack Developer',
-  description: 'Expert Web3, AI, and fullstack developer specializing in DeFi, smart contracts, and innovative tech solutions. Available for freelance projects.',
-  keywords: 'Web3 developer, blockchain developer, DeFi, smart contracts, React, Next.js, AI integration, fullstack developer',
-  authors: [{ name: 'Alex Chen' }],
-  creator: 'Alex Chen',
+  title: 'Robin CASSARD - Computer Science Engineer & Web3/AI Developer',
+  description: 'Computer Science Engineering student specializing in AI, Web3 development, and full-stack solutions. Available for freelance projects evenings & weekends.',
+  keywords: 'Web3 developer, AI developer, blockchain developer, DeFi, smart contracts, React, Next.js, freelance developer France',
+  authors: [{ name: 'Robin CASSARD' }],
+  creator: 'Robin CASSARD',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://alexchen.dev',
-    title: 'Alex Chen - Web3 Fullstack Developer',
-    description: 'Expert Web3, AI, and fullstack developer specializing in DeFi, smart contracts, and innovative tech solutions.',
-    siteName: 'Alex Chen Portfolio',
+    url: 'https://robincassard.dev',
+    title: 'Robin CASSARD - Computer Science Engineer & Web3/AI Developer',
+    description: 'Computer Science Engineering student specializing in AI, Web3 development, and full-stack solutions. Available for freelance projects.',
+    siteName: 'Robin CASSARD Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alex Chen - Web3 Fullstack Developer',
-    description: 'Expert Web3, AI, and fullstack developer specializing in DeFi, smart contracts, and innovative tech solutions.',
-    creator: '@alexchen_dev',
+    title: 'Robin CASSARD - Computer Science Engineer & Web3/AI Developer',
+    description: 'Computer Science Engineering student specializing in AI, Web3 development, and full-stack solutions.',
+    creator: '@robin_cassard',
   },
 };
 

@@ -7,32 +7,25 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Alex Chen</h3>
+            <h3 className="text-lg font-semibold">Robin CASSARD</h3>
             <p className="text-muted-foreground text-sm">
-              Web3 & AI Developer building the future of decentralized applications
-              and intelligent systems.
+              Computer Science Engineering student specializing in AI. Building innovative Web3 dApps and AI-powered solutions.
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/nexiath"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Github className="h-5 w-5" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/robin-cassard"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="https://twitter.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link
-                href="mailto:alex@example.com"
+                href="mailto:robin.cassard.dev@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
@@ -71,7 +64,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 Alex Chen. All rights reserved.</p>
+          <p>&copy; 2025 Robin CASSARD. All rights reserved.</p>
         </div>
       </div>
     </footer>
