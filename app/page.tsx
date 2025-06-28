@@ -293,7 +293,7 @@ export default function Portfolio() {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:robin.cassard.dev@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:robin.cassard39@gmail.com" target="_blank" rel="noopener noreferrer">
                     <Mail className="w-5 h-5" />
                   </a>
                 </Button>
@@ -669,19 +669,20 @@ export default function Portfolio() {
                       <label className="block text-sm font-medium mb-2">Project Type</label>
                       <select className="w-full p-3 bg-input border border-border rounded-md">
                         <option>Web3 dApp Development</option>
-                        <option>AI Integration</option>
-                        <option>Fullstack Application</option>
-                        <option>Smart Contract Audit</option>
+                        <option>AI-Powered SaaS Solutions</option>
+                        <option>Full-Stack Web Applications</option>
+                        <option>Ultra-Fast Landing Pages</option>
                         <option>Consulting</option>
                       </select>
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Budget Range</label>
                       <select className="w-full p-3 bg-input border border-border rounded-md">
-                        <option>$5K - $10K</option>
-                        <option>$10K - $25K</option>
-                        <option>$25K - $50K</option>
-                        <option>$50K+</option>
+                        <option>€700 - €1.5K</option>
+                        <option>€1.5K - €3K</option>
+                        <option>€3K - €5K</option>
+                        <option>€5K - €10K</option>
+                        <option>€10K+</option>
                       </select>
                     </div>
                     <div>
@@ -710,9 +711,9 @@ export default function Portfolio() {
                       </a>
                     </Button>
                     <Button className="w-full justify-start" variant="outline" size="lg" asChild>
-                      <a href="mailto:robin.cassard.dev@gmail.com">
+                      <a href="mailto:robin.cassard39@gmail.com">
                         <Mail className="w-5 h-5 mr-3" />
-                        robin.cassard.dev@gmail.com
+                        robin.cassard39@gmail.com
                       </a>
                     </Button>
                     <Button className="w-full justify-start" variant="outline" size="lg" asChild>
@@ -768,7 +769,7 @@ export default function Portfolio() {
                       </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <a href="mailto:robin.cassard.dev@gmail.com" target="_blank" rel="noopener noreferrer">
+                      <a href="mailto:robin.cassard39@gmail.com" target="_blank" rel="noopener noreferrer">
                         <Mail className="w-5 h-5" />
                       </a>
                     </Button>
@@ -800,7 +801,7 @@ export default function Portfolio() {
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2024 Robin CASSARD. Building the future, one block at a time.
+              © 2025 Robin CASSARD. Building the future, one block at a time.
             </p>
           </div>
         </div>
